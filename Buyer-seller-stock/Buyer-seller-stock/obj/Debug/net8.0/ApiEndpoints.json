@@ -195,6 +195,22 @@
   },
   {
     "ContainingType": "Buyer_seller_stock.Controllers.UserController",
+    "Method": "AddUserBulk",
+    "RelativePath": "api/User/add-user-bulk",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "users",
+        "Type": "System.Collections.Generic.List\u00601[[Buyer_seller_stock.Models.DTO.UserDTO, Buyer-seller-stock, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Buyer_seller_stock.Controllers.UserController",
     "Method": "getAllUser",
     "RelativePath": "api/User/get-all-user",
     "HttpMethod": "GET",

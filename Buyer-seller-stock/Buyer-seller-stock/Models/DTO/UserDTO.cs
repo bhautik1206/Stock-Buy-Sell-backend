@@ -3,7 +3,7 @@
     public class UserDTO
     {
         public required int UserId { get; set; }
-        public required int UserName { get; set; }
+        public required string UserName { get; set; }
         public required int TotalFunds { get; set; } = 0;
         //public List<UserStock>? Stocks { get; set; }
     }
