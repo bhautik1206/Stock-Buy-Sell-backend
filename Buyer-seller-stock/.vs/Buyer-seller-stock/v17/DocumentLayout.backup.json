@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "C:\\Users\\My PC\\source\\repos\\Buyer-seller-stock\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EBABE2D8-4BAE-41B0-8A35-A7E43DA7B1F5}|Buyer-seller-stock\\Buyer-seller-stock.csproj|c:\\users\\my pc\\source\\repos\\buyer-seller-stock\\buyer-seller-stock\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBABE2D8-4BAE-41B0-8A35-A7E43DA7B1F5}|Buyer-seller-stock\\Buyer-seller-stock.csproj|solutionrelative:buyer-seller-stock\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBABE2D8-4BAE-41B0-8A35-A7E43DA7B1F5}|Buyer-seller-stock\\Buyer-seller-stock.csproj|c:\\users\\my pc\\source\\repos\\buyer-seller-stock\\buyer-seller-stock\\models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBABE2D8-4BAE-41B0-8A35-A7E43DA7B1F5}|Buyer-seller-stock\\Buyer-seller-stock.csproj|solutionrelative:buyer-seller-stock\\models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBABE2D8-4BAE-41B0-8A35-A7E43DA7B1F5}|Buyer-seller-stock\\Buyer-seller-stock.csproj|c:\\users\\my pc\\source\\repos\\buyer-seller-stock\\buyer-seller-stock\\models\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBABE2D8-4BAE-41B0-8A35-A7E43DA7B1F5}|Buyer-seller-stock\\Buyer-seller-stock.csproj|solutionrelative:buyer-seller-stock\\models\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBABE2D8-4BAE-41B0-8A35-A7E43DA7B1F5}|Buyer-seller-stock\\Buyer-seller-stock.csproj|c:\\users\\my pc\\source\\repos\\buyer-seller-stock\\buyer-seller-stock\\models\\entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBABE2D8-4BAE-41B0-8A35-A7E43DA7B1F5}|Buyer-seller-stock\\Buyer-seller-stock.csproj|solutionrelative:buyer-seller-stock\\models\\entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBABE2D8-4BAE-41B0-8A35-A7E43DA7B1F5}|Buyer-seller-stock\\Buyer-seller-stock.csproj|c:\\users\\my pc\\source\\repos\\buyer-seller-stock\\buyer-seller-stock\\models\\dto\\buyerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBABE2D8-4BAE-41B0-8A35-A7E43DA7B1F5}|Buyer-seller-stock\\Buyer-seller-stock.csproj|solutionrelative:buyer-seller-stock\\models\\dto\\buyerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBABE2D8-4BAE-41B0-8A35-A7E43DA7B1F5}|Buyer-seller-stock\\Buyer-seller-stock.csproj|c:\\users\\my pc\\source\\repos\\buyer-seller-stock\\buyer-seller-stock\\migrations\\20250907170740_intial migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBABE2D8-4BAE-41B0-8A35-A7E43DA7B1F5}|Buyer-seller-stock\\Buyer-seller-stock.csproj|solutionrelative:buyer-seller-stock\\migrations\\20250907170740_intial migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EBABE2D8-4BAE-41B0-8A35-A7E43DA7B1F5}|Buyer-seller-stock\\Buyer-seller-stock.csproj|c:\\users\\my pc\\source\\repos\\buyer-seller-stock\\buyer-seller-stock\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBABE2D8-4BAE-41B0-8A35-A7E43DA7B1F5}|Buyer-seller-stock\\Buyer-seller-stock.csproj|solutionrelative:buyer-seller-stock\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -39,10 +63,6 @@
       "RelativeMoniker": "D:0:0:{EBABE2D8-4BAE-41B0-8A35-A7E43DA7B1F5}|Buyer-seller-stock\\Buyer-seller-stock.csproj|solutionrelative:buyer-seller-stock\\models\\entities\\buyer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBABE2D8-4BAE-41B0-8A35-A7E43DA7B1F5}|Buyer-seller-stock\\Buyer-seller-stock.csproj|c:\\users\\my pc\\source\\repos\\buyer-seller-stock\\buyer-seller-stock\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBABE2D8-4BAE-41B0-8A35-A7E43DA7B1F5}|Buyer-seller-stock\\Buyer-seller-stock.csproj|solutionrelative:buyer-seller-stock\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EBABE2D8-4BAE-41B0-8A35-A7E43DA7B1F5}|Buyer-seller-stock\\Buyer-seller-stock.csproj|c:\\users\\my pc\\source\\repos\\buyer-seller-stock\\buyer-seller-stock\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBABE2D8-4BAE-41B0-8A35-A7E43DA7B1F5}|Buyer-seller-stock\\Buyer-seller-stock.csproj|solutionrelative:buyer-seller-stock\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -70,11 +90,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\My PC\\source\\repos\\Buyer-seller-stock\\Buyer-seller-stock\\Models\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Buyer-seller-stock\\Models\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\My PC\\source\\repos\\Buyer-seller-stock\\Buyer-seller-stock\\Models\\Entities\\User.cs",
+              "RelativeToolTip": "Buyer-seller-stock\\Models\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T19:13:34.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "C:\\Users\\My PC\\source\\repos\\Buyer-seller-stock\\Buyer-seller-stock\\Models\\Entities\\Transaction.cs",
+              "RelativeDocumentMoniker": "Buyer-seller-stock\\Models\\Entities\\Transaction.cs",
+              "ToolTip": "C:\\Users\\My PC\\source\\repos\\Buyer-seller-stock\\Buyer-seller-stock\\Models\\Entities\\Transaction.cs",
+              "RelativeToolTip": "Buyer-seller-stock\\Models\\Entities\\Transaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T19:13:33.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BuyerDTO.cs",
+              "DocumentMoniker": "C:\\Users\\My PC\\source\\repos\\Buyer-seller-stock\\Buyer-seller-stock\\Models\\DTO\\BuyerDTO.cs",
+              "RelativeDocumentMoniker": "Buyer-seller-stock\\Models\\DTO\\BuyerDTO.cs",
+              "ToolTip": "C:\\Users\\My PC\\source\\repos\\Buyer-seller-stock\\Buyer-seller-stock\\Models\\DTO\\BuyerDTO.cs",
+              "RelativeToolTip": "Buyer-seller-stock\\Models\\DTO\\BuyerDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T19:13:13.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20250907170740_intial migration.cs",
+              "DocumentMoniker": "C:\\Users\\My PC\\source\\repos\\Buyer-seller-stock\\Buyer-seller-stock\\Migrations\\20250907170740_intial migration.cs",
+              "RelativeDocumentMoniker": "Buyer-seller-stock\\Migrations\\20250907170740_intial migration.cs",
+              "ToolTip": "C:\\Users\\My PC\\source\\repos\\Buyer-seller-stock\\Buyer-seller-stock\\Migrations\\20250907170740_intial migration.cs",
+              "RelativeToolTip": "Buyer-seller-stock\\Migrations\\20250907170740_intial migration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T17:07:40.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "SellerDTO.cs",
               "DocumentMoniker": "C:\\Users\\My PC\\source\\repos\\Buyer-seller-stock\\Buyer-seller-stock\\Models\\DTO\\SellerDTO.cs",
               "RelativeDocumentMoniker": "Buyer-seller-stock\\Models\\DTO\\SellerDTO.cs",
@@ -82,12 +154,11 @@
               "RelativeToolTip": "Buyer-seller-stock\\Models\\DTO\\SellerDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T16:49:48.382Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-07T16:49:48.382Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "TransactionDTO.cs",
               "DocumentMoniker": "C:\\Users\\My PC\\source\\repos\\Buyer-seller-stock\\Buyer-seller-stock\\Models\\DTO\\TransactionDTO.cs",
               "RelativeDocumentMoniker": "Buyer-seller-stock\\Models\\DTO\\TransactionDTO.cs",
@@ -95,12 +166,11 @@
               "RelativeToolTip": "Buyer-seller-stock\\Models\\DTO\\TransactionDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T16:42:16.234Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-07T16:42:16.234Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "StockDTO.cs",
               "DocumentMoniker": "C:\\Users\\My PC\\source\\repos\\Buyer-seller-stock\\Buyer-seller-stock\\Models\\DTO\\StockDTO.cs",
               "RelativeDocumentMoniker": "Buyer-seller-stock\\Models\\DTO\\StockDTO.cs",
@@ -108,12 +178,11 @@
               "RelativeToolTip": "Buyer-seller-stock\\Models\\DTO\\StockDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T16:20:14.945Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-07T16:20:14.945Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "Stock.cs",
               "DocumentMoniker": "C:\\Users\\My PC\\source\\repos\\Buyer-seller-stock\\Buyer-seller-stock\\Models\\Entities\\Stock.cs",
               "RelativeDocumentMoniker": "Buyer-seller-stock\\Models\\Entities\\Stock.cs",
@@ -121,12 +190,11 @@
               "RelativeToolTip": "Buyer-seller-stock\\Models\\Entities\\Stock.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T16:19:39.841Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-07T16:19:39.841Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "Seller.cs",
               "DocumentMoniker": "C:\\Users\\My PC\\source\\repos\\Buyer-seller-stock\\Buyer-seller-stock\\Models\\Entities\\Seller.cs",
               "RelativeDocumentMoniker": "Buyer-seller-stock\\Models\\Entities\\Seller.cs",
@@ -134,12 +202,37 @@
               "RelativeToolTip": "Buyer-seller-stock\\Models\\Entities\\Seller.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T16:14:37.06Z",
+              "WhenOpened": "2025-09-07T16:14:37.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\My PC\\source\\repos\\Buyer-seller-stock\\Buyer-seller-stock\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Buyer-seller-stock\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\My PC\\source\\repos\\Buyer-seller-stock\\Buyer-seller-stock\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Buyer-seller-stock\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAC8AAAAA0MzMzMwpwDkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T17:07:48.559Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\My PC\\source\\repos\\Buyer-seller-stock\\Buyer-seller-stock\\Models\\DTO\\UserDTO.cs",
+              "RelativeDocumentMoniker": "Buyer-seller-stock\\Models\\DTO\\UserDTO.cs",
+              "ToolTip": "C:\\Users\\My PC\\source\\repos\\Buyer-seller-stock\\Buyer-seller-stock\\Models\\DTO\\UserDTO.cs",
+              "RelativeToolTip": "Buyer-seller-stock\\Models\\DTO\\UserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T19:13:37.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "Buyer.cs",
               "DocumentMoniker": "C:\\Users\\My PC\\source\\repos\\Buyer-seller-stock\\Buyer-seller-stock\\Models\\Entities\\Buyer.cs",
               "RelativeDocumentMoniker": "Buyer-seller-stock\\Models\\Entities\\Buyer.cs",
@@ -147,12 +240,11 @@
               "RelativeToolTip": "Buyer-seller-stock\\Models\\Entities\\Buyer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T16:12:24.839Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-07T16:12:24.839Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "StockController.cs",
               "DocumentMoniker": "C:\\Users\\My PC\\source\\repos\\Buyer-seller-stock\\Buyer-seller-stock\\Controllers\\StockController.cs",
               "RelativeDocumentMoniker": "Buyer-seller-stock\\Controllers\\StockController.cs",
@@ -160,12 +252,11 @@
               "RelativeToolTip": "Buyer-seller-stock\\Controllers\\StockController.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAiwDIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T15:55:08.994Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-07T15:55:08.994Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "Buyer-sellerController.cs",
               "DocumentMoniker": "C:\\Users\\My PC\\source\\repos\\Buyer-seller-stock\\Buyer-seller-stock\\Controllers\\Buyer-sellerController.cs",
               "RelativeDocumentMoniker": "Buyer-seller-stock\\Controllers\\Buyer-sellerController.cs",
@@ -173,12 +264,11 @@
               "RelativeToolTip": "Buyer-seller-stock\\Controllers\\Buyer-sellerController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T15:54:38.708Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-07T15:54:38.708Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\My PC\\source\\repos\\Buyer-seller-stock\\Buyer-seller-stock\\Program.cs",
               "RelativeDocumentMoniker": "Buyer-seller-stock\\Program.cs",
@@ -190,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\My PC\\source\\repos\\Buyer-seller-stock\\Buyer-seller-stock\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Buyer-seller-stock\\Data\\ApplicationDbContext.cs",
@@ -198,12 +288,11 @@
               "RelativeToolTip": "Buyer-seller-stock\\Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-04T18:54:33.047Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-04T18:54:33.047Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "TransactionController.cs",
               "DocumentMoniker": "C:\\Users\\My PC\\source\\repos\\Buyer-seller-stock\\Buyer-seller-stock\\Controllers\\TransactionController.cs",
               "RelativeDocumentMoniker": "Buyer-seller-stock\\Controllers\\TransactionController.cs",
@@ -211,12 +300,11 @@
               "RelativeToolTip": "Buyer-seller-stock\\Controllers\\TransactionController.cs",
               "ViewState": "AgIAACoAAAAAX2ZmZmYGwDkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-04T17:32:04.658Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-04T17:32:04.658Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "Buyer-seller-stock.csproj",
               "DocumentMoniker": "C:\\Users\\My PC\\source\\repos\\Buyer-seller-stock\\Buyer-seller-stock\\Buyer-seller-stock.csproj",
               "RelativeDocumentMoniker": "Buyer-seller-stock\\Buyer-seller-stock.csproj",
@@ -228,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\My PC\\source\\repos\\Buyer-seller-stock\\Buyer-seller-stock\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Buyer-seller-stock\\Properties\\launchSettings.json",
@@ -240,20 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\My PC\\source\\repos\\Buyer-seller-stock\\Buyer-seller-stock\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Buyer-seller-stock\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\My PC\\source\\repos\\Buyer-seller-stock\\Buyer-seller-stock\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Buyer-seller-stock\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAAAAAABgZmZmZmYkwAsAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-04T17:07:48.559Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\My PC\\source\\repos\\Buyer-seller-stock\\Buyer-seller-stock\\appsettings.json",
               "RelativeDocumentMoniker": "Buyer-seller-stock\\appsettings.json",

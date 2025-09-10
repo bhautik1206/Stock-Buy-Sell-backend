@@ -3,7 +3,7 @@
     public class User
     {
         public required int UserId { get; set; }
-        public required int UserName{ get; set;}
+        public required string UserName{ get; set;}
         public required int TotalFunds { get; set;}
         //public List<UserStock> ? Stocks { get; set; }
     }

@@ -1,0 +1,109 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `spAddTransaction`(
+ IN buyerID INT,
+  IN sellerID INT,
+  IN stockID INT,
+  IN totalQ INT,
+  IN pricing INT
+)
+BEGIN
+  #Routine body goes here...
+  #Condition 1 - BuyerID is not equal to SellerID  
+--   IF @buyerID = @sellerID THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='BuyerID and sellerID same no transaction';
+--   END IF;
+--   
+--   #Condition 2 - stockId should between seller and buyer. 
+--   select Count(*) = 1 as IsBuyIDNotEqualSellID from
+--    `stock` as stk join `seller`as sell on stk.StockId = sell.StockID join `buyer` as buy on stk.StockId =buy.StockID where sell.SellerID = @sellerID And buy.BuyerID = @buyerID;
+--    
+--    
+--    #Condition 3 - If seller has same quantity as buyer ID only then able to do transaction
+-- SELECT buy.TotalQuantity = sell.TotalQuantity from buyer buy join seller sell on buy.StockID= sell.StockID;
+-- 
+-- #Condition 4 - If seller has the same qunatity to sell 
+-- SELECT TotalQunaity INTO totalQ
+--   FROM seller
+--   WHERE SellerID = @sellerID AND StockID = @stockID;
+-- 
+--   #Condition 5 - Buyer has more fund than Total Quantity * buyer pricing
+--   select @totalQ*@pricing < TotalFunds from buyer where buyerID =@buyerID ;
+-- 
+--   UPDATE `user` us SET TotalFunds = us.TotalFunds - @totalQ*@pricing where us.UserId = @buyerID
+--   
+--   INSERT INTO `transaction` (
+--     TransactionID,
+--     BuyerID,
+--     SellerID,
+--     StockID,
+--     TotalQuantity,
+--     TransationTime,
+--     Pricing
+--   )
+--   VALUES (
+--     UUID(),
+--     buyerID,
+--     sellerID,
+--     stockID,
+--     totalQ,
+--     NOW(),
+--     pricing
+--   );
+
+ DECLARE sellerQty INT;
+  DECLARE buyerFunds INT;
+
+  -- Condition 1: BuyerID ≠ SellerID
+  IF buyerID = sellerID THEN 
+    SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'BuyerID and SellerID are the same – no transaction';
+  END IF;
+
+  -- Condition 2: StockID must be associated with both buyer and seller
+  IF NOT EXISTS (
+    SELECT 1
+    FROM stock stk
+    JOIN seller sell ON stk.StockId = sell.StockID
+    JOIN buyer buy ON stk.StockId = buy.StockID
+    WHERE stk.StockId = stockID AND sell.SellerID = sellerID AND buy.BuyerID = buyerID
+  ) THEN
+    SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'StockID is not associated with both buyer and seller';
+  END IF;
+
+  -- Condition 3: Buyer and seller must have same quantity for that stock
+  IF NOT EXISTS (
+    SELECT 1
+    FROM buyer buy
+    JOIN seller sell ON buy.StockID = sell.StockID
+    WHERE buy.BuyerID =@buyerID AND sell.SellerID = @sellerID AND buy.TotalQuantity = sell.TotalQuantity
+  ) THEN
+    SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Buyer and seller quantities do not match';
+  END IF;
+
+  -- Condition 4: Seller must have enough quantity to sell
+  SELECT TotalQuantity INTO sellerQty
+  FROM seller
+  WHERE SellerID = sellerID AND StockID = stockID;
+
+  IF sellerQty < totalQ THEN
+    SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Seller does not have enough quantity';
+  END IF;
+
+  -- Condition 5: Buyer must have enough funds
+  SELECT TotalFunds INTO buyerFunds
+  FROM buyer
+  WHERE BuyerID = buyerID;
+
+  IF buyerFunds < (totalQ * pricing) THEN
+    SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Buyer does not have sufficient funds';
+  END IF;
+
+  -- Update buyer's funds
+  UPDATE `user` us 
+  SET us.TotalFunds = us.TotalFunds - (totalQ * pricing)
+  WHERE us.UserID = buyerID;
+
+  -- Insert transaction record
+  INSERT INTO `transaction` (
+    TransactionID, BuyerID, SellerID, StockID, TotalQunaity, TransationTime, Pricing
+  ) VALUES (
+    UUID(), buyerID, sellerID, stockID, totalQ, NOW(), pricing
+  );
+END

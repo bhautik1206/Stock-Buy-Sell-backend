@@ -113,5 +113,32 @@ namespace Buyer_seller_stock.Controllers
             return Ok(seller); // Again, you can use DTO projection.
         }
 
+        [HttpPost]
+        /*
+            public required int BuyerID { get; set; }// userID from user table
+        public required string BuyerName { get; set; } // user name from user table
+        public required int StockID { get; set; }
+        public required decimal TotalFunds { get; set; }
+        public required int TotalQuantity { get; set; }
+        public required int BuyingPrice { get; set; }*/
+        [Route("add-bulk-buyer")]
+        public IActionResult AddBulkBuyer([FromBody]List<BuyerDTO> buyerDTO)
+        {
+            var buyerList = new List<Buyer>();
+            foreach(var buy in buyerDTO)
+            {
+                var buyerEntity = new Buyer
+                {
+                    BuyerID = buy.BuyerID,
+                    BuyerName = buy.BuyerName,
+                    StockID = buy.StockID,
+                    TotalFunds = buy.TotalFunds,
+                    TotalQuantity = buy.TotalQuantity,
+                    BuyingPrice = buy.BuyingPrice
+                };
+                buyerList.Add(buyerEntity);
+            }
+            return Ok(buyerList);
+        }
     }
 }

@@ -45,5 +45,28 @@ namespace Buyer_seller_stock.Controllers
             dbContext.SaveChanges();
             return Ok(userEntity);
         }
+        [HttpPost]
+        [Route("add-user-bulk")]
+        public IActionResult AddUserBulk([FromBody] List<UserDTO> users)
+        {
+            var userList = new List<User>();
+
+            foreach (var addUserDTO in users)
+            {
+                var userEntity = new User()
+                {
+                    UserId = addUserDTO.UserId,
+                    UserName = addUserDTO.UserName,
+                    TotalFunds = addUserDTO.TotalFunds,
+                };
+                userList.Add(userEntity);
+            }
+
+            dbContext.User.AddRange(userList);
+            dbContext.SaveChanges();
+
+            return Ok(userList);
+        }
+
     }
 }
