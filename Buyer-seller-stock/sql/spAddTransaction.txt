@@ -82,7 +82,7 @@ BEGIN
   FROM seller
   WHERE SellerID = sellerID AND StockID = stockID;
 
-  IF sellerQty < totalQ THEN
+  IF sellerQty > totalQ THEN
     SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Seller does not have enough quantity';
   END IF;
 
@@ -91,14 +91,10 @@ BEGIN
   FROM buyer
   WHERE BuyerID = buyerID;
 
-  IF buyerFunds < (totalQ * pricing) THEN
+  IF buyerFunds > (totalQ * pricing) THEN
     SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Buyer does not have sufficient funds';
   END IF;
 
-  -- Update buyer's funds
-  UPDATE `user` us 
-  SET us.TotalFunds = us.TotalFunds - (totalQ * pricing)
-  WHERE us.UserID = buyerID;
 
   -- Insert transaction record
   INSERT INTO `transaction` (
@@ -106,4 +102,15 @@ BEGIN
   ) VALUES (
     UUID(), buyerID, sellerID, stockID, totalQ, NOW(), pricing
   );
+-- Update buyer's fund
+  UPDATE `user` us 
+  SET us.TotalFunds = us.TotalFunds - (totalQ * pricing)
+  WHERE us.UserID = buyerID;
+  
+-- Update seller's fund
+UPDATE `user` us 
+  SET us.TotalFunds = us.TotalFunds + (totalQ * pricing)
+  WHERE us.UserID = sellerID;
+  
+  SELECT * from `transaction` limit 1; 
 END
