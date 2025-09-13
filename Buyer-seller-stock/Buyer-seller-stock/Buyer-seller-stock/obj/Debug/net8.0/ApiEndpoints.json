@@ -1,0 +1,275 @@
+[
+  {
+    "ContainingType": "Buyer_seller_stock.Controllers.Buyer_seller",
+    "Method": "AddBulkBuyer",
+    "RelativePath": "api/controller/add-bulk-buyer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "buyerDTO",
+        "Type": "System.Collections.Generic.List\u00601[[Buyer_seller_stock.Models.DTO.BuyerDTO, Buyer-seller-stock, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Buyer_seller_stock.Controllers.Buyer_seller",
+    "Method": "addBuyerbyID",
+    "RelativePath": "api/controller/add-buyer-by-id",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "buyerDTO",
+        "Type": "Buyer_seller_stock.Models.DTO.BuyerDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Buyer_seller_stock.Controllers.Buyer_seller",
+    "Method": "AddSellerByID",
+    "RelativePath": "api/controller/add-seller-by-id",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sellerDTO",
+        "Type": "Buyer_seller_stock.Models.DTO.SellerDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Buyer_seller_stock.Controllers.StockController",
+    "Method": "AddStock",
+    "RelativePath": "api/controller/add-stock",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "stockDTO",
+        "Type": "Buyer_seller_stock.Models.DTO.StockDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Buyer_seller_stock.Controllers.Buyer_seller",
+    "Method": "GetAllBuyers",
+    "RelativePath": "api/controller/get-all-buyers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Buyer_seller_stock.Controllers.Buyer_seller",
+    "Method": "GetAllSellers",
+    "RelativePath": "api/controller/get-all-seller",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Buyer_seller_stock.Controllers.StockController",
+    "Method": "getallStock",
+    "RelativePath": "api/controller/get-all-stock",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Buyer_seller_stock.Controllers.Buyer_seller",
+    "Method": "GetBuyerByID",
+    "RelativePath": "api/controller/get-buyer-by-id/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Buyer_seller_stock.Controllers.Buyer_seller",
+    "Method": "GetSellerByID",
+    "RelativePath": "api/controller/get-seller-by-id/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Buyer_seller_stock.Controllers.StockController",
+    "Method": "getstock",
+    "RelativePath": "api/controller/get-stock-by-id/{stockID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "stockID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Buyer_seller_stock.Controllers.TransactionController",
+    "Method": "addNewTransaction",
+    "RelativePath": "api/Transaction/add-transaction",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "transactionDTO",
+        "Type": "Buyer_seller_stock.Models.DTO.TransactionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Buyer_seller_stock.Controllers.TransactionController",
+    "Method": "addNewTransactionBySP",
+    "RelativePath": "api/Transaction/add-transaction-by-sp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Buyer_seller_stock.Controllers.TransactionController",
+    "Method": "getAllTransaction",
+    "RelativePath": "api/Transaction/get-all-transaction",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Buyer_seller_stock.Controllers.TransactionController",
+    "Method": "getAllTransactionByID",
+    "RelativePath": "api/Transaction/get-all-transaction-by-id{transID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "transID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Buyer_seller_stock.Controllers.UserController",
+    "Method": "addUser",
+    "RelativePath": "api/User/add-User",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addUserDTO",
+        "Type": "Buyer_seller_stock.Models.DTO.UserDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Buyer_seller_stock.Controllers.UserController",
+    "Method": "AddUserBulk",
+    "RelativePath": "api/User/add-user-bulk",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "users",
+        "Type": "System.Collections.Generic.List\u00601[[Buyer_seller_stock.Models.DTO.UserDTO, Buyer-seller-stock, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Buyer_seller_stock.Controllers.UserController",
+    "Method": "getAllUser",
+    "RelativePath": "api/User/get-all-user",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Buyer_seller_stock.Controllers.UserController",
+    "Method": "getUsersByID",
+    "RelativePath": "api/User/get-all-user-by-userID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Buyer_seller_stock.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Buyer_seller_stock.WeatherForecast, Buyer-seller-stock, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
