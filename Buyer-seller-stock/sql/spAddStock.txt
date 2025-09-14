@@ -1,0 +1,16 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `spAddStock`(
+  IN id int,
+  IN sName LONGTEXT,
+  In sprice DECIMAL(65,2),
+  IN totalQ INT,
+  In symbol LONGTEXT
+  
+)
+BEGIN
+  #Routine body goes here...
+  IF EXISTS (SELECT 1 from stock where StockID != id) THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'StockID is present,Request to check another stock';
+  END IF;
+  
+  INSERT into `stock` (StockID , StockName,Price , TotalAvalibleQuantity, StockSymbol) values (id,sName, sprice,totalQ,symbol);
+  SELECT * from stock where StockId = Id;
+END
