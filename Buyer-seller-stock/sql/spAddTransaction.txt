@@ -91,7 +91,7 @@ BEGIN
   FROM buyer
   WHERE BuyerID = buyerID;
 
-  IF buyerFunds > (totalQ * pricing) THEN
+  IF buyerFunds < (totalQ * pricing) THEN
     SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Buyer does not have sufficient funds';
   END IF;
 
@@ -111,6 +111,6 @@ BEGIN
 UPDATE `user` us 
   SET us.TotalFunds = us.TotalFunds + (totalQ * pricing)
   WHERE us.UserID = sellerID;
-  
+  CALL   spAdjustStockQuantity(stockID);
   SELECT * from `transaction` limit 1; 
 END

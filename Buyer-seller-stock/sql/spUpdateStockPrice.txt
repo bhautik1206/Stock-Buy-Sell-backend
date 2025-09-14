@@ -1,0 +1,15 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `spUpdateStockPrice`(
+  IN id int,
+  IN nPrice DECIMAL(65,2)
+)
+BEGIN
+  #Routine body goes here...
+  IF EXISTS (SELECT 1 from stock where StockID <> id) THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'These Stock is not present in the stockTable';
+  END IF;
+  IF nPrice <=  0.00  THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'price cannot be negative or equal to zero';
+  END IF;
+  
+  UPDATE stock SET Price = nPrice where StockID = id ;
+  
+
+END
