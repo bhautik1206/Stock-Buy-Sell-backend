@@ -1,0 +1,18 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `spMatchOrders`(IN id INT, IN buyerID INT, IN sellerID INT, IN stockP DECIMAL (65, 2))
+BEGIN
+  #Routine body goes here...
+  IF buyerID = sellerID THEN
+    SIGNAL SQLSTATE '45000'
+    SET MESSAGE_TEXT = "Buyer ID and sellerID is same";
+  END IF;
+  IF NOT EXISTS (SELECT 1 FROM `user` us WHERE us.UserId = buyerID) THEN
+    SIGNAL SQLSTATE '45000'
+    SET MESSAGE_TEXT = "Buyer is not present in table";
+  END IF;
+  IF NOT EXISTS (SELECT 1 FROM `user` us WHERE us.UserId = SellerID) THEN
+    SIGNAL SQLSTATE '45000'
+    SET MESSAGE_TEXT = "Seller is not present in table";
+  END IF;
+  SELECT * from `buyer` buy join `seller` sell on buy.StockID = sell.StockID join stock st on st.StockId = buy.StockID;
+  
+END
