@@ -1,0 +1,11 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `spGetUserTransactions`(
+  IN id int
+)
+BEGIN
+  #Routine body goes here...
+  IF NOT EXISTS (SELECT 1 from `user` where UserId = id) THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT="User is not present in the user table";
+  END IF;
+  
+  SELECT * from `transaction` where BuyerID= id or SellerID = id;
+  
+END
