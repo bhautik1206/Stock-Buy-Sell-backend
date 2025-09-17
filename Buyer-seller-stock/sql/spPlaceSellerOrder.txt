@@ -1,0 +1,24 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `spPlaceSellerOrder`(
+IN sellerID INT,
+  IN sname VARCHAR(500),
+  IN idStock INT,
+  IN fund DECIMAL(65,2),
+  IN totalQ INT,
+  IN sellerP DECIMAL(65,2)
+)
+BEGIN
+  #Routine body goes here...
+  
+  #Routine body goes here...
+  IF NOT EXISTS (select 1 from `user` where UserId = sellerID) THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = "User is not present in user table";
+  END IF;
+  
+   IF NOT EXISTS (select 1 from `stock` where StockId= idStock) THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = "Stock is not present in stock table";
+  END IF;
+--   IF fund > totalQ * sellerP THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT="fund is less";
+--   END IF;
+  
+  INSERT into seller (sellerID,sellerName,StockID,TotalFunds,TotalQuantity,SellingPrice) values
+  (sellerID,sname,idStock,fund,totalQ,sellerP);
+  SELECT * from `seller` sell join stock st on sell.StockID = st.StockId WHERE sell.SellerID = sellerID AND st.StockId = idStock;
+END
