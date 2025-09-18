@@ -13,11 +13,13 @@ BEGIN
   
    IF NOT EXISTS (select 1 from `stock` where StockId= idStock) THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = "Stock is not present in stock table";
   END IF;
-  IF fund > totalQ * buyingP THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT="fund is less";
+  SELECT totalQ * buyingP AS total_cost, fund AS available_fund;
+
+  IF NOT (ROUND(fund, 2) >= ROUND(totalQ * buyingP, 2)) THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT="fund is less";
   END IF;
   
-  INSERT into buyer (buyerID,bname,idStock,fund,totalQ,buyingP) values
+  INSERT into buyer (BuyerID,BuyerName,StockID,TotalFunds,TotalQuantity,BuyingPrice) values
   (buyerID,bname,idStock,fund,totalQ,buyingP);
-  
+  SELECT * from buyer where BuyerID = buyerID;
   
 END
