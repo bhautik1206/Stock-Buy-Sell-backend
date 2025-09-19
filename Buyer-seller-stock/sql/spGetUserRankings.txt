@@ -1,0 +1,5 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `spGetUserRankings`()
+BEGIN
+  #Routine body goes here...
+  SELECT * from `user` ORDER BY TotalFunds DESC;
+END
