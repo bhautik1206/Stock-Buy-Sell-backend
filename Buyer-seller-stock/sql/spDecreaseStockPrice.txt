@@ -1,0 +1,11 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `spDecreaseStockPrice`(
+IN id Int
+)
+BEGIN
+  #Routine body goes here...
+  IF Not EXISTS (select 1 from stock where StockId= id) THEN
+  SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT="Stock not availble";
+  END IF;
+  UPDATE `stock` st SET st.Price = st.Price - (0.01*st.Price)  WHERE st.StockId = id;
+  SELECT * from stock where StockId = id;
+END
