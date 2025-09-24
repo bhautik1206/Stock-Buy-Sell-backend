@@ -1,0 +1,11 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `spDeleteTransaction`(
+  IN id VARCHAR(260)
+)
+BEGIN
+  #Routine body goes here...
+  IF NOT EXISTS (SELECT 1 from `transaction` where TransactionID = id ) THEN
+   SIGNAL SQLSTATE  '45000'  SET MESSAGE_TEXT="No transaction FOUND"; 
+  
+  DELETE from `transaction` where TransactionID = id;
+   END IF;
+END
