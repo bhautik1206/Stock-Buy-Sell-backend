@@ -1,0 +1,12 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `spRemoveFund`(
+  In id INT,
+  IN fund INT
+)
+BEGIN
+  #Routine body goes here...
+    IF NOT EXISTS (SELECT 1 from `user` WHERE UserID = id) THEN  SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT="User not present";
+  END IF;
+  
+  UPDATE `user` SET TotalFunds = TotalFunds - fund where UserID = id;
+  SELECT * from `user` where UserId = id;
+END
